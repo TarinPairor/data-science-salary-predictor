@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Science Salary Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+    <div class="img"></div>
+    <form class="form">
+      <h2>Work Year</h2>
+      <div class="switch-field">
+        <input
+          type="radio"
+          id="radio-work-year-1"
+          name="uiwork-year"
+          value="2020"
+        />
+        <label for="radio-work-year-1">2020</label>
+        <input
+          type="radio"
+          id="radio-work-year-2"
+          name="uiwork-year"
+          value="2021"
+        />
+        <label for="radio-work-year-2">2021</label>
+        <input
+          type="radio"
+          id="radio-work-year-3"
+          name="uiwork-year"
+          value="2022"
+        />
+        <label for="radio-work-year-3">2022</label>
+        <input
+          type="radio"
+          id="radio-work-year-4"
+          name="uiwork-year"
+          value="2023"
+        />
+        <label for="radio-work-year-4" checked>2023</label>
+      </div>
+    </form>
+    <form class="form">
+      <h2>Job Category</h2>
+      <div>
+        <select class="job-category" name="" id="ui_job_category">
+          <option value="" disabled="disabled" selected="selected">
+            Choose a job Category
+          </option>
+        </select>
+      </div>
+    </form>
+    <form class="form">
+      <h2>Employee Residence</h2>
+      <div>
+        <select class="employee-residence" name="" id="ui_employee_residence">
+          <option value="" disabled="disabled" selected="selected">
+            Choose an Employee Residence
+          </option>
+        </select>
+      </div>
+    </form>
+    <form class="form">
+      <h2>Experience Level</h2>
+      <div>
+        <select class="experience-level" name="" id="ui_experience_level">
+          <option value="" disabled="disabled" selected="selected">
+            Choose an Experience Level
+          </option>
+        </select>
+      </div>
+    </form>
+    <form class="form">
+      <h2>Work Setting</h2>
+      <div>
+        <select class="work-setting" name="" id="ui_work_setting">
+          <option value="" disabled="disabled" selected="selected">
+            Choose a Work Setting
+          </option>
+        </select>
+      </div>
+    </form>
+    <form class="form">
+      <h2>Company Location</h2>
+      <div>
+        <select class="company-location" name="" id="ui_company_location">
+          <option value="" disabled="disabled" selected="selected">
+            Choose a Company Location
+          </option>
+        </select>
+      </div>
+    </form>
+    <form class="form">
+      <h2>Company Size</h2>
+      <div>
+        <select class="company-size" name="" id="ui_company_size">
+          <option value="" disabled="disabled" selected="selected">
+            Choose a Company Size
+          </option>
+        </select>
+      </div>
+    </form>
+    <button class="submit" onclick="onClickedEstimatePrice()" type="button">
+      Estimate Salary
+    </button>
+    <div id="uiEstimatedSalary" class="result">
+      <h2></h2>
+    </div>
+  </body>
+</html>
